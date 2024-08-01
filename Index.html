@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Food Order System</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400..600;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body>
+    <!-- side bar -->
+    <div class="sidebar">
+      <!-- logo -->
+      <h1 class="logo">Food Ordering</h1>
+      <!-- List of menu -->
+      <div class="side-menus">
+        <a href="#"><ion-icon name="home-outline"></ion-icon>Homen</a>
+        <a href="#"><ion-icon name="receipt-outline"></ion-icon>Bills</a>
+        <a href="#"><ion-icon name="wallet-outline"></ion-icon>Wallet</a>
+        <a href="#"
+          ><ion-icon name="notifications-outline"></ion-icon>Notification</a
+        >
+        <a href="#"><ion-icon name="chatbubble-outline"></ion-icon>Contact</a>
+        <a href="#"><ion-icon name="settings-outline"></ion-icon>Seting</a>
+      </div>
+      <!-- Logout -->
+      <div class="sidebar-logout">
+        <a href="#"><ion-icon name="log-out-outline"></ion-icon>Logout</a>
+      </div>
+    </div>
+    <!-- main -->
+    <div class="main">
+      <div class="main-navbar">
+        <!-- menu when appear on mobile v -->
+        <ion-icon class="menu-toggle" name="menu-outline"></ion-icon>
+        <!-- search bar -->
+        <div class="search">
+          <input type="text" placeholder="What you want to eat?" />
+          <button class="search-btn">search</button>
+        </div>
+        <!-- profile icon -->
+        <div class="profile">
+          <a href="#" class="cart"
+            ><ion-icon name="cart-outline"></ion-icon>
+          </a>
+          <a href="#" class="user"
+            ><ion-icon name="person-outline"></ion-icon>
+          </a>
+        </div>
+      </div>
+      <!-- Main Highlisght -->
+      <div class="main-highlight">
+        <!-- title -->
+        <div class="main-header">
+          <h2 class="main-title">Recommendatations</h2>
+          <div class="main-arrow">
+            <ion-icon
+              class="back"
+              name="chevron-back-circle-outline"
+            ></ion-icon>
+            <!-- forward -->
+            <ion-icon
+              class="back"
+              name="chevron-forward-circle-outline"
+            ></ion-icon>
+          </div>
+        </div>
+        <!-- highlight menu -->
+        <div class="highlight-wrapper">
+          <div class="highlight-card">
+            <img
+              class="highlight-img"
+              alt="highlt image"
+              src="./images/Biriyani.jpg"
+            />
+            <div class="highlight-desc">
+              <h4>Biriyani</h4>
+              <p>$200.0</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <img
+              class="highlight-img"
+              alt="highlt image"
+              src="./images/burger.jpg"
+            />
+            <div class="highlight-desc">
+              <h4>burger</h4>
+              <p>$150.0</p>
+            </div>
+          </div>
+          <div class="highlight-card">
+            <img
+              class="highlight-img"
+              alt="highlt image"
+              src="./images/fingerChips.jpg"
+            />
+            <div class="highlight-desc">
+              <h4>fingerChips</h4>
+              <p>$100.0</p>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <img
+              class="highlight-img"
+              alt="highlt image"
+              src="./images/Vada.jpg"
+            />
+            <div class="highlight-desc">
+              <h4>Vada</h4>
+              <p>$300.0</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- main menu/ oders -->
+      <div class="main-menus">
+        <div class="main-filter">
+          <div>
+            <h2 class="main-title">
+              Menu <br />
+              Category
+            </h2>
+            <div class="main-arrow">
+              <ion-icon
+                class="back"
+                name="chevron-back-circle-outline"
+              ></ion-icon>
+              <!-- forward -->
+              <ion-icon
+                class="back"
+                name="chevron-forward-circle-outline"
+              ></ion-icon>
+            </div>
+          </div>
+          <div class="filter-wrapper">
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="restaurant-sharp"></ion-icon>
+              </div>
+              <p>All Menus</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="fast-food-sharp"></ion-icon>
+              </div>
+              <p>Burger</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="pizza-sharp"></ion-icon>
+              </div>
+              <p>Pizza</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="wine-sharp"></ion-icon>
+              </div>
+              <p>Wine</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="ice-cream-sharp"></ion-icon>
+              </div>
+              <p>Ice cream</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="cafe-sharp"></ion-icon>
+              </div>
+              <p>Coffee</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="fish-sharp"></ion-icon>
+              </div>
+              <p>SeaFood</p>
+            </div>
+            <div class="filter-card">
+              <div class="filter-icon">
+                <ion-icon name="nutrition-sharp"></ion-icon>
+              </div>
+              <p>Helthy</p>
+            </div>
+          </div>
+        </div>
+        <hr class="divider" />
+
+        <!-- olist of food  -->
+        <div class="main-detail">
+          <h2 class="main-title">Choose order</h2>
+          <div class="detail-wrapper">
+            <div class="detail-card">
+              <img src="./images/soup.jpg" alt="" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Sheimp soup</h4>
+                  <p class="detail-sup">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam obcaecati cupiditate saepe, alias nesciunt totam
+                    hic a quae eos, maxime numquam porro? Ea quidem vel
+                    veritatis nostrum, qui error distinctio.
+                  </p>
+                  <p class="price">$150.0</p>
+                </div>
+                <ion-icon
+                  class="detail-favorites"
+                  name="bookmark-sharp"
+                ></ion-icon>
+              </div>
+            </div>
+            <!-- 2nd card -->
+            <div class="detail-card">
+              <img src="./images/Biriyani.jpg" alt="" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Biriyani</h4>
+                  <p class="detail-sup">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam obcaecati cupiditate saepe, alias nesciunt totam
+                    hic a quae eos, maxime numquam porro? Ea quidem vel
+                    veritatis nostrum, qui error distinctio.
+                  </p>
+                  <p class="price">$150.0</p>
+                </div>
+                <ion-icon
+                  class="detail-favorites"
+                  name="bookmark-sharp"
+                ></ion-icon>
+              </div>
+            </div>
+            <!-- 3rd -->
+            <div class="detail-card">
+              <img src="./images/burger.jpg" alt="" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>burger</h4>
+                  <p class="detail-sup">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam obcaecati cupiditate saepe, alias nesciunt totam
+                    hic a quae eos, maxime numquam porro? Ea quidem vel
+                    veritatis nostrum, qui error distinctio.
+                  </p>
+                  <p class="price">$150.0</p>
+                </div>
+                <ion-icon
+                  class="detail-favorites"
+                  name="bookmark-sharp"
+                ></ion-icon>
+              </div>
+            </div>
+            <!-- 4th -->
+            <div class="detail-card">
+              <img src="./images/fingerChips.jpg" alt="" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>fingerChips</h4>
+                  <p class="detail-sup">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam obcaecati cupiditate saepe, alias nesciunt totam
+                    hic a quae eos, maxime numquam porro? Ea quidem vel
+                    veritatis nostrum, qui error distinctio.
+                  </p>
+                  <p class="price">$150.0</p>
+                </div>
+                <ion-icon
+                  class="detail-favorites"
+                  name="bookmark-sharp"
+                ></ion-icon>
+              </div>
+            </div>
+            <!-- 5h -->
+            <div class="detail-card">
+              <img src="./images/Pizza.jpg" alt="" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Pizza</h4>
+                  <p class="detail-sup">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam obcaecati cupiditate saepe, alias nesciunt totam
+                    hic a quae eos, maxime numquam porro? Ea quidem vel
+                    veritatis nostrum, qui error distinctio.
+                  </p>
+                  <p class="price">$150.0</p>
+                </div>
+                <ion-icon
+                  class="detail-favorites"
+                  name="bookmark-sharp"
+                ></ion-icon>
+              </div>
+            </div>
+            <!-- 6th
+              -->
+            <div class="detail-card">
+              <img src="./images/soup.jpg" alt="" class="detail-img" />
+              <div class="detail-desc">
+                <div class="detail-name">
+                  <h4>Sheimp soup</h4>
+                  <p class="detail-sup">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quibusdam obcaecati cupiditate saepe, alias nesciunt totam
+                    hic a quae eos, maxime numquam porro? Ea quidem vel
+                    veritatis nostrum, qui error distinctio.
+                  </p>
+                  <p class="price">$150.0</p>
+                </div>
+                <ion-icon
+                  class="detail-favorites"
+                  name="bookmark-sharp"
+                ></ion-icon>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar -->
+  </body>
+  <!-- iconic icon added -->
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
+  <script src="./index.js"></script>
+</html>
